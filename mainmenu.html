@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<title>main menu</title>
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+	<link rel="stylesheet" href="beachmenu.css">
+</head>
+<body>
+<style>
+
+body {
+  	background-repeat: no-repeat;
+    background-size: 100%;
+	background-image: url("sun.jpg");
+	min-height: 100%;
+	image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+
+}
+</style>
+<h1 aria-label="refraction"> </h1>
+	
+<!-- This is not part of Pen -->
+<a class="me" href="https://codepen.io/uzcho_/pens/popular/?grid_type=list" target="_blank" style="color:#000"></a>
+
+	<audio controls autoplay loop hidden id="music">
+	<source src="theme.mp3" type="audio/mpeg">
+	Your browser does not support the audio element.
+	</audio>
+
+
+	<img src="play.png" style = "width:25px; height:25px; position:fixed; right:40px; bottom:10px;" onclick="play()('theme.mp3')">
+	<img src="pause.png" style = "width:25px; height:21px; position:fixed; right:10px; bottom:11px;" onclick="pause()('theme.mp3')">
+
+
+	<div class="btn-group">
+
+	<button class ="button"><a href="Beachmenu.html" style="text-decoration:none;">Visit the Beach</button>
+	</br>
+	<button class ="button"><a href="house.html" style="text-decoration:none;">Visit the Hotel</button>
+	</br>
+	<button class ="button"><a href="casino.html" style="text-decoration:none;">Visit the Casino</button>
+	</br>
+	<button class ="button"><a href="house.html" style="text-decoration:none;">Visit His House</button>
+</body>
+
+<script>
+	var myMusic= document.getElementById("music");
+	function play() {
+	myMusic.play();
+	}
+
+	function pause() {
+	myMusic.pause();
+	}
+</script>
